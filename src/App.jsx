@@ -22,7 +22,7 @@ function App() {
         element:<Home/>
       },
       {
-        path:"/about",
+        path:"about",
         element:<About/>
       },
       {
@@ -31,13 +31,13 @@ function App() {
         loader: getMoviesdata,
       },
       {
-        path: "/movie/:movieID", //Here the value is dynamic value.movieId value is dynamic
+        path: "movie/:movieID", //Here the value is dynamic value.movieId value is dynamic
         element:<MovieDetails/>,
         loader: getMoviesDetails,
       },
 
       {
-        path:"/contact",
+        path:"contact",
         element:<Contact/>,
         action:contactData,
       }
@@ -64,9 +64,9 @@ function App() {
     // }
 
   ],
-  {
-    basename:"/react-router"
-  }
+  // {
+  //   basename:"/react-router"
+  // }
 );
   // const router = createBrowserRouter(   //It is also another way to create a route.
   //   createRoutesFromElements(
