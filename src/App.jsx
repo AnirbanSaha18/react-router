@@ -17,7 +17,8 @@ function App() {
       element:<AppLayout/>,
       errorElement:<Errorpage/>, // Here we add errorElement property for handling the error if user enter invalid URL then it will go to errorpage.
       children:[{//Here we create a children so,in all the pages(home,about,contact etc) Header, footer will show.AppLayout is our parent component and inside a applayout everything will show.
-        path:"/",
+        // path:"/",
+        index: true,
         element:<Home/>
       },
       {
