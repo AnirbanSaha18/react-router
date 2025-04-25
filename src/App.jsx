@@ -1,5 +1,5 @@
 import './App.css'
-import { createBrowserRouter,RouterProvider } from 'react-router-dom';
+import { createHashRouter,RouterProvider } from 'react-router-dom';
 import Home from './Home';
 import About from './About';
 import Movie from './Movie';
@@ -11,7 +11,7 @@ import MovieDetails from './components/UI/MovieDetails';
 import { getMoviesDetails } from './api/GetMovieDetails';
 
 function App() {
-  const router = createBrowserRouter([ //Through createBrowserRouter here we create a Route.
+  const router = createHashRouter([ //Through createBrowserRouter here we create a Route.
     {
       path:"/",
       element:<AppLayout/>,
