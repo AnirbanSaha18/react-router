@@ -4,10 +4,12 @@ export const getMoviesdata = async()=>{
            `https://www.omdbapi.com/?i=tt3896198&apikey=${import.meta.env.VITE_API_KEY}&s=titanic&page=1`
 
         );
-        const data = response.json();
+        const data =  await response.json();
+        console.log("Movie data loaded",data);
         return data;
 
     }catch(error){
         console.log(error);
+        return null;
     }
 }

@@ -26,7 +26,7 @@ function App() {
         element:<About/>
       },
       {
-        path: "/movie",
+        path: "movie",
         element:<Movie/>,
         loader: getMoviesdata,
       },
