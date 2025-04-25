@@ -64,9 +64,9 @@ function App() {
     // }
 
   ],
-  // {
-  //   basename:"/react-router"
-  // }
+  {
+    basename:"/react-router"
+  }
 );
   // const router = createBrowserRouter(   //It is also another way to create a route.
   //   createRoutesFromElements(
