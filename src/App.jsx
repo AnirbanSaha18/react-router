@@ -22,16 +22,16 @@ function App() {
         element:<Home/>
       },
       {
-        path:"about",
+        path:"/about",
         element:<About/>
       },
       {
-        path: "movie",
+        path: "/movie",
         element:<Movie/>,
         loader: getMoviesdata,
       },
       {
-        path: "movie/:movieID", //Here the value is dynamic value.movieId value is dynamic
+        path: "/movie/:movieID", //Here the value is dynamic value.movieId value is dynamic
         element:<MovieDetails/>,
         loader: getMoviesDetails,
       },
@@ -64,9 +64,9 @@ function App() {
     // }
 
   ],
-  {
-    basename:"/react-router"
-  }
+  // {
+  //   basename:"/react-router"
+  // }
 );
   // const router = createBrowserRouter(   //It is also another way to create a route.
   //   createRoutesFromElements(
