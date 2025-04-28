@@ -37,7 +37,7 @@ function App() {
       },
 
       {
-        path:"contact",
+        path:"/contact",
         element:<Contact/>,
         action:contactData,
       }
